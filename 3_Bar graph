@@ -1,0 +1,14 @@
+#
+# 막대그래프
+#
+
+import matplotlib.pyplot as plt
+import numpy as np
+season = ['spring', 'summer', 'fall', 'winter']
+precipitation = [312.8, 446.2, 381.6, 108.1]
+ind = np.arange(len(precipitation))
+plt.bar(ind, precipitation)
+plt.title('precipitation')
+plt.ylabel('mm')
+plt.xticks(ind, season)
+plt.show()
