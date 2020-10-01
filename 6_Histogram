@@ -1,0 +1,9 @@
+#
+# 히스토그램
+#
+
+import numpy as np
+import matplotlib.pyplot as plt
+X = np.random.randn(1000)
+plt.hist(X, bins=20, alpha=0.5)  # 막대 수:20, 투명도:0.5
+plt.show()
