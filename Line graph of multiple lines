@@ -1,0 +1,19 @@
+#
+# 여러 개의 선으로 이루어진 선그래프
+#
+
+import matplotlib.pyplot as plt
+import numpy as np
+year = [2006, 2009, 2012, 2015]
+jpn = [533, 534, 545, 539]
+kor = [552, 548, 562, 521]
+usa = [479, 497, 484, 474]
+ind = np.arange(len(year))
+plt.plot(ind, jpn, 'g-', label='Japan')
+plt.plot(ind, kor, 'r-.', label='Korea')
+plt.plot(ind, usa, 'b:', label='USA')
+plt.xticks(ind, year)
+plt.legend()
+plt.title('Mathematics performance')
+plt.ylabel('score')
+plt.show()
