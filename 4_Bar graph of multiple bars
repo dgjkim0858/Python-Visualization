@@ -1,0 +1,19 @@
+#
+# 여러 개의 막대로 이루어진 막대그래프
+#
+
+import matplotlib.pyplot as plt
+import numpy as np
+w = 0.4    # 기본 0.8
+men = [173.3, 170.7, 175, 176.4]
+women = [160.9, 157.9, 162.5, 164.7]
+nation = ['Korea', 'Japan', 'USA', 'France']
+ind = np.arange(len(nation))
+plt.bar(ind-w/2, men, width=w, label='men')
+plt.bar(ind+w/2, women, width=w, label='women')
+plt.title('Height')
+plt.ylabel('cm')
+plt.ylim(140, 180)
+plt.xticks(ind, nation)
+plt.legend()
+plt.show()
