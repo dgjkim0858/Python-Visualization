@@ -1,0 +1,10 @@
+#
+# 상자그림
+#
+
+import matplotlib.pyplot as plt
+classA = [70, 80, 65, 77, 88, 80, 77]
+classB = [85, 90, 88, 89, 95, 80, 85]
+data = [classA, classB]
+plt.boxplot(data, labels=['classA', 'classB'])
+plt.show()
