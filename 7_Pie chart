@@ -1,0 +1,12 @@
+#
+# 원그래프
+#
+
+import matplotlib.pyplot as plt
+import numpy as np
+import collections
+bloods = ['A','A','B','O','A','B','O','A','O','O','B','AB']
+histogram = collections.Counter(bloods)
+plt.pie(histogram.values(), labels=histogram.keys(), autopct='%1.1f%%')
+plt.axis('equal')
+plt.show()
